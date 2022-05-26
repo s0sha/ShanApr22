@@ -6,13 +6,48 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NewFolder\**" />
+    <Compile Remove="StepDefinitions\**" />
+    <Compile Remove="Tests\NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <EmbeddedResource Remove="StepDefinitions\**" />
+    <EmbeddedResource Remove="Tests\NewFolder\**" />
+    <None Remove="NewFolder\**" />
+    <None Remove="StepDefinitions\**" />
+    <None Remove="Tests\NewFolder\**" />
+    <SpecFlowFeatureFiles Remove="NewFolder\**" />
+    <SpecFlowFeatureFiles Remove="StepDefinitions\**" />
+    <SpecFlowFeatureFiles Remove="Tests\NewFolder\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="NewFolder\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="StepDefinitions\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Tests\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Specflow\Feature1.feature.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowFeatureFiles Remove="Specflow\Feature1.feature" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="Microsoft.NETCore.App" Version="2.2.8" />
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
     <PackageReference Include="Selenium.Support" Version="4.1.0" />
     <PackageReference Include="Selenium.WebDriver" Version="4.1.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="100.0.4896.6000" />
+    <PackageReference Include="Selenium.WebDriver.WaitExtensions" Version="2.0.0" />
+    <PackageReference Include="SpecFlow" Version="3.9.69" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.69" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.69" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Specflow\" />
   </ItemGroup>
 
 </Project>

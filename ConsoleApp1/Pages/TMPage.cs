@@ -18,12 +18,10 @@ namespace ConsoleApp1.Pages
             OpenQA.Selenium.IWebElement administrationDropDown = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a"));
             administrationDropDown.Click();
 
-           // Wait.WaitForWebElement(driver,"XPath", "/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a", 2);
+            Wait.WaitForClickableWE(driver,"XPath", "/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a", 2);
 
             IWebElement tmOption = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/ul/li[3]/a"));
             tmOption.Click();
-            Thread.Sleep(2000);
-
 
         
 
