@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "7680039f-0b5c-417a-a3ac-d702583dd33c",
-		"name": "Apr2022 DummyAPI",
+		"_postman_id": "e92a9cdb-9d2f-46ee-8bcb-ff27c450a3fa",
+		"name": "Apr2022 Employee CRUD E2E Test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "21163286"
 	},
@@ -170,7 +170,7 @@
 							"\r",
 							"\r",
 							"//Assertion JSON Value Check name = test\r",
-							"pm.test(\"Your test name\", function () {\r",
+							"pm.test(\"Value Pair Check name, salary and age\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
 							"        pm.expect(jsonData.data.name).to.equal('test');\r",
 							"        pm.expect(jsonData.data.salary).to.equal('123');\r",
